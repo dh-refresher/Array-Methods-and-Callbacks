@@ -21,14 +21,13 @@ fifaData.filter((element) =>
 /* Task 2: Create a function called getFinals that takes `data` as an argument and returns an array of objects with only finals data */
 
 function getFinals(data) {
-  console.log(data);
-  // data.forEach((element) => {
-  //   if (element.stage.includes == "Finals") {
-  //     console.log("Finals");
-  //   } else {
-  //     console.log("not finals");
-  //   }
-  // });
+  const finals = [];
+  data.forEach((element) => {
+    if (element.Stage.toLowerCase().includes("finals")) {
+      finals.push(element);
+    }
+    return finals;
+  });
 }
 
 getFinals(fifaData);
