@@ -23,7 +23,7 @@ fifaData.filter((element) =>
 function getFinals(data) {
   console.log(data);
   // data.forEach((element) => {
-  //   if (element.stage == "Finals") {
+  //   if (element.stage.includes == "Finals") {
   //     console.log("Finals");
   //   } else {
   //     console.log("not finals");
